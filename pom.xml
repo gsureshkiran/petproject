@@ -8,15 +8,19 @@
     <packaging>war</packaging>
 
     <distributionManagement>
-        <snapshotRepository>
-        <id>nexus</id>
-        <url>http://43.205.255.187:8081/repository/maven-snapshot-nexus-repo/</url>
-       </snapshotRepository>
-       <repository>
-               <id>nexus</id>
-               <url>http://43.205.255.187:8081/repository/maven-release-nexus-repo/</url>
-       </repository>
-   </distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-39-165.ap-southeast-1.compute.internal-releases</name>
+        <url>http://54.179.197.48:8081/artifactory/etoe</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-39-165.ap-southeast-1.compute.internal-snapshots</name>
+        <url>http://54.179.197.48:8081/artifactory/etoe</url>
+    </snapshotRepository>
+</distributionManagement>
+
+
 
    
     <scm>
